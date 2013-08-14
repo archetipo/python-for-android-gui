@@ -90,6 +90,7 @@ class TabTools(TabbedPanel):
 		btnInstall=Button(text='Install',size_hint=(1,1))
 		btnInstall.bind(on_press=self.start_install)
 		btnInstall.bind(on_release=self.install_prj)
+		btnInstall.disabled=False
 
 		BtnBx=BoxLayout()
 		BtnBx.size_hint = (1,.1)
@@ -200,6 +201,7 @@ class TabTools(TabbedPanel):
 
 	def get_popup(self,title,text,progr=False):
 		btnclose = Button(text='Ok', size_hint_y=None, height='50sp')
+
 		content = BoxLayout(orientation='vertical')
 		content.add_widget(Label(text=text))
 		self.pb = ProgressBar(max=1000)
