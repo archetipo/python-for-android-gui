@@ -80,6 +80,7 @@ Global overview
     
 
 #. In Build & install Tab::
+
     Left Side:
     
         insert a proj data:
@@ -88,7 +89,7 @@ Global overview
         name : prj_name
         base package: org.test
         
-        Treview Folder
+        Treeview Folder
             The directory containing public files for the project.
             
         select deploy type: debug or releas
